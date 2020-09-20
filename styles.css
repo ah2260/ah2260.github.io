@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: roboto;
+	font-weight: 400;
+	text-align: center;
+}
+main{
+	width: 100%;
+}
+a {
+    padding: 12px;
+    display: block;
+    background-color: #2b89ff;
+    width: 360px;
+    margin: auto;
+    margin: 20px auto;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+}
+.img-abs-rel{
+	display: block;
+	position: relative;
+}
+.img-abs-rel img{
+	display: block;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+}
+.img2{
+	width: 240px !important;
+	position: absolute;
+	top: 0;
+}
