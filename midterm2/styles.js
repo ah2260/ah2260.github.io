@@ -117,8 +117,8 @@ function mainclick(){
 	$('.fa-arrow-left').css('visibility', 'hidden');
 	$('.border1, .border2, .border3, .border4, .border5, .border6').removeClass("border-background");
 	$('.icon').css("color", "#65667B");
-	$('h1').text("Hello");
-	$('h2').text("World");
+	$('h1').text("Alison");
+	$('h2').text("Huang");
 	$('object span').text("Place Object 1");
 	$('html').css("background-color","#eee"),3000;
 }
