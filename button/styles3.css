@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  display: block;
+}
+body {
+  margin: 0;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  background: transparent;
+}
+body::-webkit-scrollbar-button{
+  background: #ffffff;
+}
+body::-webkit-scrollbar-track{
+  background: #ffffff;
+}
+body::-webkit-scrollbar-track-piece{
+	background: #ffffff;
+}
+body::-webkit-scrollbar-thumb{
+	background: rgba(0,0,0,.10);
+}
+body,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+div,
+summary {
+  display: block;
+  font-size: 12px;
+  letter-spacing: .2px;
+  line-height: 24px;
+  vertical-align: top;
+	
+}
+a {
+  background-color: transparent;
+  cursor:pointer;
+  outline: 0;
+  border:0;
+}
+a:active,
+a:hover,
+a:link,
+a:visited,
+button:active,
+button:focus{
+	outline:0;
+	border:0;
+	text-decoration:none;
+}
+body{
+	width:100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display:block; 
+}
+ul{
+	-webkit-padding-start: 0px;
+	-moz-padding-start: 0px;
+	-ms-padding-start: 0px;
+	-o-padding-start: 0px;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	margin: 0;
+	padding: 0;
+}
+li{
+	vertical-align:top;
+}
+body{
+	
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+}
+.heart, .heart2 {
+    display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    margin: auto;
+    color: #ff3037;
+    font-size: 0px;
+	transition: .3s ease-in;
+}
+.heart2{
+	font-size: 240px;
+	visibility: hidden;
+	opacity: 1;
+	transition: .3s ease-out;
+	transition-delay: .3s;
+}
+.button {
+    border: none;
+    padding: 10px 30px;
+    font-family: Montserrat;
+    margin-top: 50px;
+    background: rgba(255,48,55,0.1);
+    color: #ff3037;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 46px;
+	cursor: pointer;
+}
+.button:hover{
+	color: #fff;
+	background: #ff3037;
+	transition: .2s ease-in;
+}
