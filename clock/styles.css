@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	display: block;
+    background-color: #EC0868;
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+	text-align: center;
+	transition: .3s ease-in;
+}
+body{
+	position: relative;
+}
+
+button {
+	position: relative;
+    margin: auto;
+    top: 15%;
+    background: transparent;
+    color: #fff;
+    width: 130px;
+    padding: 12px 0px;
+    font-size: 24px;
+    outline: 0;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+	background: #fff;
+    color: #EC0868;
+}
+h1 {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 84px;
+	display: none;
+}
+#clock{
+       position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        width: 140px;
+        height: 140px;
+        -moz-border-radius: 50%;
+       -webkit-border-radius: 50%;
+       border-radius: 50%;
+        border: 3px solid #fff;
+        margin: auto;
+       
+          
+
+        
+        }
+        
+      #clock:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+    	-webkit-border-radius: 50%;
+    	border-radius: 50%;
+        background: #fff;
+        top: 50%;left: 50%;
+        transform: translate(-50%, -50%); /* Regola Standard */
+        border: 2px solid #EC0868;
+       }  
+
+     #secondi , #ore , #minuti{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        -moz-border-radius: 50%;
+    	-webkit-border-radius: 50%;
+    	border-radius: 50%;
+		z-index: 0;
+        } 
+     
+     #secondi:after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 65px;
+        background: #fff;
+        left: 69px;top:5px;
+		
+     }
+   
+     #ore:after {
+    content: "";
+    position: absolute;
+    width: 10;
+    height: 40px;
+    background: #fff;
+    left: 65px;
+    top: 30px;
+    border-radius: 6px;
+
+}
+
+
+    
+   }
+   
+   #minuti:after{
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 55px;
+   background: #fff;
+   left: 65px; top: 15px; 
+ 
+    
+   }
