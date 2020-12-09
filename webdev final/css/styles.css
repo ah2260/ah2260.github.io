@@ -5,10 +5,11 @@
     font-weight: 400;
 	color:#fff;
 }
+/* reset */
 html,body{
 	width:100%;
 	overflow-x: hidden;
-	display:block; 
+	display:block;
 }
 ul{
 	-webkit-padding-start: 0px;
@@ -19,6 +20,9 @@ ul{
 li{
 	vertical-align:top;
 }
+/* reset end*/
+
+/* General styles*/
 .menu-icon{
 	position:fixed;
 	visibility:hidden;
@@ -72,10 +76,13 @@ li{
 	outline:none;
 	box-shadow:none;
 }
+/* general styles end*/
+
 section{
 	display:block;
 	width:100%;
 }
+/* navbar styles*/
 .navbar-brand,
 .navbar-nav li a{
 	color:#fff;
@@ -89,6 +96,7 @@ section{
 	-o-transition: all ease .3s;
     transition: all ease .3s;
 }
+/*banner styles*/
 #banner{
 	width:100%;
 	padding-bottom:180px;
@@ -135,6 +143,7 @@ section{
 	color:#fff;
 	width:10px;
 }
+/* animation image sec*/
 #section2{
 	background-color:#5c1bb7;
 	position:relative;
@@ -187,6 +196,7 @@ section{
 	-o-transition: all ease .3s;
     transition: all ease .3s;
 }
+/* services sec*/
 #services{
 	background-color:#222222;
 	padding:60px 0;
@@ -288,6 +298,7 @@ h3{
 	margin: 5px 0 0 2.5px;
 	display:block;
 }
+/* clients sec*/
 #clients{
 	padding:20px 0 15px 0;
 	background-color:#5c1bb7;
@@ -300,6 +311,7 @@ h3{
 	padding:20px 30px;
 	display:inline-block;
 }
+/* contact sec*/
 #contact{
 	background-color:#222222;
 	padding:50px 0;
@@ -354,6 +366,7 @@ h3{
 	text-align:center;
 	padding-top:
 }
+/* footer sec*/
 .footer-list{
 	text-align:left;
 	padding:30px 40px;
@@ -382,6 +395,36 @@ h3{
 	border-top: 1px solid #333;
 	text-align:left;
 }
+/* animation styles banner*/
+.hidden2{
+	opacity:0;
+	margin-top:-50px
+}
+.hidden3{
+	opacity:0;
+	margin-top:100px
+}
+.hidden4{
+	opacity:0;
+}
+.fadeIn2{
+	opacity:1;
+	-webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+	-ms-transition: all linear .4s;
+	-o-transition: all linear .4s;
+    transition: all linear .4s;
+}
+.fadeIn{
+	opacity:1;
+	margin-top:0px;
+	-webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+	-ms-transition: all ease 1s;
+	-o-transition: all ease 1s;
+    transition: all ease 1s;
+}
+/* image animation styles*/
 .layers img{
 	width:100%;
 }
@@ -390,6 +433,11 @@ h3{
 	overflow:visible;
 	width:100%;
 	position:relative;
+	-webkit-transition: all ease 1.5s;
+    -moz-transition: all ease 1.5s;
+	-ms-transition: all ease 1.5s;
+	-o-transition: all ease 1.5s;
+    transition: all ease 1.5s;
 }
 .layer1{
 	margin-top:10%;
@@ -406,11 +454,26 @@ h3{
 	height:80px;
 	margin-top:-3%;
 }
-
+.animate1{
+	margin-top:0%;
+}
+.animate2{
+	margin-top:-1%;
+}
+.animate3{
+	margin-top:8%;
+}
+/* responsive media queries*/
 @media (min-width:1200px)
 {
 	#banner{
 		height:600px;
+	}
+	.scrolltop{
+		height:600px;
+	}
+	.marginTop{
+		top:100px;
 	}
 	#section2 .container{
 		height:610px;
@@ -438,6 +501,9 @@ h3{
 @media (min-width:768px) and (max-width:1199px){
 	#banner{
 		height:500px;
+	}
+	.scrolltop{
+		height:570px;
 	}
 	#section2 .container{
 		width:900px;
@@ -481,7 +547,15 @@ h3{
 	.layer3{
 		margin-top:-7%;
 	}
-	
+	.animate1{
+		margin-top:0%;
+	}
+	.animate2{
+		margin-top:-6%;
+	}
+	.animate3{
+		margin-top:2%;
+	}	
 }
 @media (max-width:767px){
 	.navbar{
@@ -569,6 +643,15 @@ h3{
 	.layer3{
 		margin-top:-7%;
 	}
+	.animate1{
+		margin-top:0%;
+	}
+	.animate2{
+		margin-top:-6%;
+	}
+	.animate3{
+		margin-top:2%;
+	}
 }
 @media (max-width:320px){
 	.layers{
@@ -587,5 +670,13 @@ h3{
 	.layer3{
 		margin-top:-15%;
 	}
-	
+	.animate1{
+		margin-top:0%;
+	}
+	.animate2{
+		margin-top:-13%;
+	}
+	.animate3{
+		margin-top:-5%;
+	}
 }
